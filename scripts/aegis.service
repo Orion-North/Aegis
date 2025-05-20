@@ -1,0 +1,12 @@
+[Unit]
+Description=Aegis Turret Service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/Aegis-Turret
+ExecStart=/home/pi/Aegis-Turret/venv/bin/python3 software/vision/main.py
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

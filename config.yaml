@@ -1,0 +1,16 @@
+# Aegis Turret configuration
+
+camera:
+  device: 0
+  width: 640
+  height: 480
+  fps: 120
+
+model:
+  path: models/yolov8.pt
+  conf_threshold: 0.5
+
+motor:
+  port: /dev/ttyUSB0
+  baudrate: 115200
+  step_angle: 1.8
